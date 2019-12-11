@@ -7,5 +7,10 @@ Een uitgebreide handleiding is [hier te vinden](https://ednieuw.home.xs4all.nl/W
 
 Usage Arduino
 =============
-Om de software te compileren zijn nodig de:
-- Adafruit Neopixel library
+Om de software te compileren zijn nodig de libraries:
+- Adafruit Neopixel
+- RTClib bij Adafruit
+en optioneel 
+- Encoder by Paul Stofregen
+- Keypad by Mark Stanley, A Brevig
+
