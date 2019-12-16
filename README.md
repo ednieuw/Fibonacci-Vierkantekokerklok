@@ -12,9 +12,8 @@ Usage Arduino
 Om de software te compileren zijn nodig de libraries:
 - Adafruit Neopixel
 - RTClib bij Adafruit
-en optioneel 
-- Encoder by Paul Stofregen
-- Keypad by Mark Stanley, A Brevig
+- Encoder by Paul Stofregen 
+- Keypad by Mark Stanley, A Brevig (ipv de encoder)
 
 In deze klok wordt gebruik gebruikt van kleuren en oppervlakten die de reeks van Fibonacci volgen.
 Deze reeks is 1,1,2,3,5. De oppervlakten van de segmenten is de klok.
@@ -43,9 +42,9 @@ Voorbeeld: 8 uur.
 Dat kan bereikt worden met het optellen van 1+1+2+4, of 1+3+4 of 3+5.
 De display van de klok is een weergave van de Fibonacci-reeks en de oppervlakte 
 van de vlakken is de verhouding van de oppervlakte in de reeks.
-<img alt="fibonacci-klokken" src="Fibonacciclocks.png" width="450" />
-
 Als het nu duizelt is het goed.
+
+<img alt="fibonacci-klokken" src="Fibonacciclocks.png" width="450" />
 
 Nog een voorbeeld. 3:35.
 Dat zijn drie rode (uren) vlakken en 35/5 = 7 gele (minuten) vlakken.
@@ -54,3 +53,9 @@ Zeven kan zijn 1 + 1 + 5 of 2 + 5 of 1 + 1 + 2 + 3.
 3:35 tot en met 3:39 geven dezelfde 7 minutenvlakken maar de kloksoftware 
 probeert elke minuut een andere combinatie te vinden. Dit gaat random dus het 
 kan zijn dat hij weer dezelfde combinatie vindt en niet verspringt.
+
+Hoe laat is het in de foto?
+
+- 1 x rood + 2 x blauw = 3 uur
+- 3 x geel + 2 x blauw = 5 minuutsegmenten van 5 minuten = 25. 
+-> Dus 3:25 maar het kan ook nog 3:29:59 zijn
