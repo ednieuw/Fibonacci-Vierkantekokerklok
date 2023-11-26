@@ -1,5 +1,7 @@
-# Fibonacci vierkante kokerklok
-Fibonacci vierkante buisklok, of stokklok. Fibonaccistick klink het beste.
+ # Fibonacci vierkante kokerklok (Fibonacci square tube clock)
+Below an English desctiption
+
+Fibonacci vierkante buisklok, of stokklok.
 
 Deze vierkante kokerklok is een variatie op de [Fibonacciklokkast](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciClock/Fibonacciklok.html)  <br>
 De software is vereenvoudigd en geschikt voor de WS2812- en SK6812-kleuren-LED's.
@@ -7,7 +9,7 @@ De software is vereenvoudigd en geschikt voor de WS2812- en SK6812-kleuren-LED's
 Een uitgebreide handleiding is [hier te vinden](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html) <br>
 <img alt="Fibonaccistick and Niki de Saint Phalle inflatable doll" height="675" src="Stick_Niki_IMG_4173.JPG" width="900" />
 
-Usage Arduino
+Gebruik Arduino
 =============
 Om de software te compileren zijn nodig de libraries:
 - Adafruit Neopixel
@@ -61,6 +63,8 @@ Hoe laat is het in de foto? <br>
 
 
 ![Stickclock](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/624ee14f-00de-4b0c-b973-1493eee80e15)
+
+Een gedetaileerde beschrijving hier: https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html
 
 
  
