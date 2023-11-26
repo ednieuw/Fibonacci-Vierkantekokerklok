@@ -60,6 +60,7 @@ Hoe laat is het in de foto? <br>
 -> Dus 3:25 maar het kan ook nog 3:29:59 zijn
 
 
+![Stickclock](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/624ee14f-00de-4b0c-b973-1493eee80e15)
 
 
  
@@ -115,6 +116,9 @@ Otherwise, make the cabinet a little higher and possibly wider to keep the side 
 The strip has 12 LEDs per 20 cm (60 LEDs per meter). The smallest cabinet is therefore 30 cm long.
 With a ready-made Arduino, like the one at the back of the photo below, the connection pins are at the top and bottom. This makes the case 15 mm higher.
 Including the connecting wires, a cabinet of 40 mm wide or high is required.
+![3ArduinosIMG_3937](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/0ad901af-607e-48d6-b967-3f22ae902bd2)
+
+
 The inside of the compartments where the lighting is on must be perfectly white.
 For example, you can use white MDF for this.
 But it can also be easily stuck by white paper to the inside of the compartments.
@@ -137,6 +141,9 @@ If the compartment dividers are cut from cardboard, this can be done later.
 - Install the electronics (see below) and glue the dividers in place.
 - Finish the cabinet neatly if the electronics work properly.
 - Tape the compartment divisions on the perspex with 2 mm wide black adhesive tape or draw the compartment divisions on the perspex with a black felt-tip pen for a better contrast between the light surfaces.
+![KastonderdelenIMG_3933](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/f66f78a9-1a8e-48dc-84af-8715991a4a8d)
+
+
 For the large 52 cm cabinet with an LED strip of 30 LEDs per meter:
 The advantage of the larger cabinet is that a larger and more accurate DS3231 time module can be used.
 The dimensions are then 40 x 40 mm per compartment and the length of the cabinet is 520 mm.
@@ -148,7 +155,8 @@ The requirements for the electronics are shown below
 A soldering iron is needed to solder three wires to the LED strip.
 The light-sensitive sensor and the resistor should preferably also be soldered.
 A multimeter costing 10 euros is useful to measure the resistances and check any bad connections.
- 
+ ![Benodigdheden_IMG_3956](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/9d663817-ed7f-4da7-947a-6eb8f570ab29)
+
 Required:
 
 - WS2812 or SK6812 LED strip with twelve LEDs
@@ -169,18 +177,25 @@ Required:
 The connection diagram is drawn below.
 The program to design these schemes can be downloaded from Fritzing
 Click on the image for the design file that can be read and edited in the Fritzing program.
+
+![Fritzing-3button](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/ffc8b395-104d-40fe-8b28-776ca8c94ed4)
+
 In software version V023, a flat 3-button membrane can also be used instead of the rotary.
 If the membrane buttons are visible and horizontal then GND is the top wire.
- 
+ ![3-button](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/65bd6dd8-1551-4bc0-93c4-c87866accc17)
+![Fritzingschema](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/0f4f5b6e-ac54-489e-979e-71d20d3b34ce)
+
 Soldering the LEDs
 
 - Apply solder to the three connections on the LED side where the GND connection is above.
+![Strip_IMG_3810](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/b660096e-daab-405c-8605-3c197766cb05)
 
 Strip soldering
 
 - Solder the three Dupont wires of approximately 5 cm in length.
 
 Strip soldering
+![Strip_IMG_3811](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/c5969658-61bd-4086-a13a-1279757fb8b5)
 
 The resistor is an additional security and can be omitted if necessary.
 - Cut the middle wire, connected to Di, and solder the 470 ohm resistor between it.
@@ -200,16 +215,19 @@ The capacitor dampens this wave so that the LEDs are less stressed when turned o
 
 The photo shows additional wires soldered. A GND (ground wire) can be used for the LDR connection.
 There is a shortage of GND connections on the Arduino. The diagram shows that two wires go to the GND.
- 
+ ![ArduinoMG_3940](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/738055cf-79fa-4ae0-b3d2-107e615aa068)
+
 It is wise to label the wires. This prevents errors when connecting and is practical if something ever comes loose or needs to be replaced later.
 
 - So label all wires as shown in the Fritzing design diagram above.
+![DS3231_IMG_3807](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/5be51ae4-225e-462d-94f1-2a4601e163c6)
 
 It is true that the DS3231 clock module is connected to 3.3V, but it can also be connected to 5V.
 The rotary receives its power from a digital pin that is turned "on" in the software.
 pinMode(EncoderPow, OUTPUT );
 digitalWrite(EncoderPow,HIGH);There is then 5V on pin 2 and 20 mA current can be safely drawn from it
 The clock could also be powered with a digital pin if the software is adjusted.
+![DS3231_IMG_3805](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/8dc91efd-6ec3-4d24-ad68-b35b87830b4a)
 
 DS3231 Raspberry
 
@@ -219,19 +237,23 @@ Between 5V and GND pins on the Arduino Nano it is more than 10 kOhm (10,000 Ohm)
 
 
 - Connect the Rotary or membrane button and RTC clock module according to the diagram above.
+![AllconnectedIMG_3819](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/db806544-5ef8-41ab-afbd-8484693aa61a)
 
 Connections to Arduino
 
 - Connect the USB plug to a 5V power supply.
 Wait a few seconds. No burning smell and the LEDs light up?
 
-The software
-IDE preparation
+## The software
+### IDE preparation
 
 - Download the Arduino IDE from: https://www.arduino.cc/en/Main/Software
 Arduino IDE
+![IDEs](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/cead78e2-ee19-473b-849b-d689c991815c)
 
 The software uses libraries. This is software written by others that contains functions that would otherwise take you months to figure out and program. Now you can use that work that others have selected for you.
+![libraries](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/10901af6-7d93-4fe4-a157-afba87b97806)
+
 Libraries
 The Arduino programming environment offers a wide range of libraries.
 In order to adapt this Fibonacci clock software, the following libraries must be installed in the Arduino IDE:
@@ -248,20 +270,23 @@ There are many types of Arduinos. we use the Arduino Nano
 In the menu: Tools -> board you can select the Arduino Nano
 Under Processor, choose ATMEGA328p (Old bootloader)
 board
+![boards](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/ba27c377-93e0-4fc6-b779-c9dc01410b57)
 
 To place the code in the Arduino Nano, an Arduino must be connected to the PC via a USB cable.
 Port then turns black and a com port can be checked
 If the arrow to the right under edit in the menu is then pressed, the program will be loaded into the Arduino nano.
 
-The program and its algorithms
+## The program and its algorithms
 
 The parts used can be selected with #define.
 Placing two slashes // before a #define disables the option.
 In the program, the pieces that code for a part can be recognized by the program lines between #ifdef and #endif.
 The piece of code will not be compiled into the software if it is not defined with a #define.
+
 #ifdef ROTARYMOD
 #include <Encoder.h> // For rotary encoder
 #endif ROTARYMOD
+
 The software supports WS2812 or SK6812 LED strips. Choose one of these.
 You can also choose between a rotary knob (ROTARYMOD) or a keypad (KEYPAD).
 
@@ -430,9 +455,11 @@ case 14 ... 19: break;
 default: NoofRotaryPressed = 0; Reset(); break; 
 }
  
-Keypad
+## Keypad
 The 3x4 key keypad in the current software is too large to stick on the clock, but can be used for a cabinet.
-Serial control
+## Serial control
+![Serialmonitor](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/386f4fb7-fbc1-47ad-a8b7-d64cfb5eafd2)
+
 Serial monitor
 After the clock is connected to the PC with a serial cable, the clock can be controlled with the Arduino IDE software.
 Entering 'i' brings up a menu in the "serial monitor" of the Arduino IDE.
