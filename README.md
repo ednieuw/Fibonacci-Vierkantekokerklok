@@ -66,18 +66,20 @@ Hoe laat is het in de foto? <br>
 
 Een gedetaileerde beschrijving hier: https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html
 
-
  
 # Detailed description 
-This square case clock is a variation on the Fibonacci case clock. 
-The software is simplified and suitable for two types of color LEDs.
-The Fibonacci clock was a kick-starter project by Philippe Chrétien.
+This square case clock is a variation on the Fibonacci case clock.  <br>
+The software is simplified and suitable for two types of color LEDs. <br>
+The Fibonacci clock was a kick-starter project by Philippe Chrétien. <br>
 
-What makes this clock so attractive is its simplicity, ingenuity and the constantly changing Mondrian-like painting display.
-Mondriaan was also looking for simplicity in his paintings, which started with realism and ended with his characteristic style via cubism.
-In addition to the play of colors, this clock invites you to recalculate the time presented.
-But a clock? And what does Fibonacci have to do with Mondrian?
-The colored areas separated by black lines are immediately reminiscent of Piet Mondriaan's paintings when the primary colors red, yellow and blue are used.
+What makes this clock so attractive is its simplicity, ingenuity and the constantly changing Mondrian-like painting display. <br>
+Mondriaan was also looking for simplicity in his paintings, which started with realism and ended with his characteristic style via cubism. 
+
+In addition to the play of colors, this clock invites you to recalculate the time presented. 
+
+But a clock? And what does Fibonacci have to do with Mondrian? 
+
+The colored areas separated by black lines are immediately reminiscent of Piet Mondriaan's paintings when the primary colors red, yellow and blue are used. <br>
  
 This clock uses colors and surfaces that follow the Fibonacci sequence.
 
@@ -87,54 +89,82 @@ The stick above has 1 red + 2 blue areas = 3 o'clock
 In addition, 3 + 5 = 8 yellow areas + 2 blue areas = 8 + 2 = 10 areas of 5 minutes = 10 x 5 = 50 minutes.
  
 1 + 2 = 3 hours, (8 + 2) x 5 = 50 minutes It is 3:50, ten to four.
+
 What the clock does is turn on the lighting behind the areas that are to be added.
+
 A third color, blue, is used to combine the hours and minutes.
+
 The red areas are the hours.
+
 The yellow areas multiplied by 5 are the minutes and
+
 the blue areas if there is a red and yellow one occupying the same area.
+
 The white areas mean zero, they mean nothing with addition.
+
  
-Fibonacci was an Italian mathematician who developed the series of numbers named after him. It was not a normal series of numbers, but one that also often occurs in natural processes. For example in sunflowers and shells.
-The sequence is simple. Each subsequent number in the series is the sum of the two previous ones: 1, 1, 2, 3, 5, 8, ....
+Fibonacci was an Italian mathematician who developed the series of numbers named after him. It was not a normal series of numbers, but one that also often occurs in natural processes. For example in sunflowers and shells. <br>
+The sequence is simple. Each subsequent number in the series is the sum of the two previous ones: 1, 1, 2, 3, 5, 8, .... 
+
 If we add 1, 1, 2, 3, 5 we get 12.
-Ah, exactly the number of hours in a half day and 12 multiplied by 5 is the number of minutes in an hour.
+
+Ah, exactly the number of hours in a half day and 12 multiplied by 5 is the number of minutes in an hour. <br>
  
-Example: 4 hours.
+Example: 4 hours. <br>
 This can be a sum of: 1+1+2 or 1+3.
-Example: 8 hours.
+
+Example: 8 hours. <br>
 This can be achieved by adding 1+1+2+4, or 1+3+4 or 3+5.
-The clock's display is a representation of the Fibonacci sequence and the area of ​​the faces is the ratio of the area in the sequence. fibonacci clocks
+
+The clock's display is a representation of the Fibonacci sequence and the area of ​​the faces is the ratio of the area in the sequence. fibonacci clocks..
  
 If it's dizzy now, that's fine.
  
 Another example. 3:35.
+
 That is three red (hours) areas and 35/5 = 7 yellow (minutes) areas.
+
 You can make three with the 1 plane + 2 plane or only with the 3 plane.
+
 Seven can be 1 + 1 + 5 or 2 + 5 or 1 + 1 + 2 + 3.
+
 3:35 to 3:39 give the same 7 minute segments, but the clock software tries to find a different combination every minute. This is random, so he may find the same combination again and not jump.
  
  
-#The construction of the cabinet
+# The construction of the casing
 The minimum space required to build the electronics in a cabinet is 25 x 25 x 100 mm internal dimensions if an Arduino Nano is used with the connection pins on one side.
+
 Otherwise, make the cabinet a little higher and possibly wider to keep the side of the cabinet square
+
 The strip has 12 LEDs per 20 cm (60 LEDs per meter). The smallest cabinet is therefore 30 cm long.
+
 With a ready-made Arduino, like the one at the back of the photo below, the connection pins are at the top and bottom. This makes the case 15 mm higher.
+
 Including the connecting wires, a cabinet of 40 mm wide or high is required.
+
 ![3ArduinosIMG_3937](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/0ad901af-607e-48d6-b967-3f22ae902bd2)
 
 
 The inside of the compartments where the lighting is on must be perfectly white.
+
 For example, you can use white MDF for this.
+
 But it can also be easily stuck by white paper to the inside of the compartments.
+
 Thin, sturdy cardboard, MDF or other material can be used as a separation between the compartments. Do not make it thicker than 2 mm.
+
 It is nice when the white perspex top plate falls into the wood.
+
 To do this, use a saw table to cut a slot 1 mm deep in the side, 1-2 mm below the top at the thickness of the perspex sheet.
+
 But of course it can also be stuck between the sides.
 
 For the smallest cabinet with an LED strip of 60 LEDs per meter:
 - Cut a strip for the bottom 25 mm wide and 300 mm long.
 - Immediately saw a strip of 25 mm wide (maximum 2 mm thick) for the partitions for the compartments and saw the seven partitions to size (25x25mm).
+- 
 If the compartment dividers are cut from cardboard, this can be done later.
+
 - Saw two sides of 35 cm to a width of 25 mm + the thickness of the bottom plate.
 - If necessary, saw out a slot just below the top edge into which the perspex can fall.
 - Cut out the sides of the end edge with a width of 25 mm.
@@ -146,14 +176,15 @@ If the compartment dividers are cut from cardboard, this can be done later.
 - Finish the cabinet neatly if the electronics work properly.
 - Tape the compartment divisions on the perspex with 2 mm wide black adhesive tape or draw the compartment divisions on the perspex with a black felt-tip pen for a better contrast between the light surfaces.
 ![KastonderdelenIMG_3933](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/f66f78a9-1a8e-48dc-84af-8715991a4a8d)
-
-
 For the large 52 cm cabinet with an LED strip of 30 LEDs per meter:
+
 The advantage of the larger cabinet is that a larger and more accurate DS3231 time module can be used.
+
 The dimensions are then 40 x 40 mm per compartment and the length of the cabinet is 520 mm.
+
 The LED strip then contains 30 LEDs per meter.
 
-Assembling the electronics
+### Assembling the electronics
 
 The requirements for the electronics are shown below
 A soldering iron is needed to solder three wires to the LED strip.
@@ -189,36 +220,43 @@ If the membrane buttons are visible and horizontal then GND is the top wire.
  ![3-button](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/65bd6dd8-1551-4bc0-93c4-c87866accc17)
 ![Fritzingschema](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/0f4f5b6e-ac54-489e-979e-71d20d3b34ce)
 
-Soldering the LEDs
+### Soldering the LEDs
 
 - Apply solder to the three connections on the LED side where the GND connection is above.
-![Strip_IMG_3810](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/b660096e-daab-405c-8605-3c197766cb05)
 
+![Strip_IMG_3810](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/b660096e-daab-405c-8605-3c197766cb05) <br>
 Strip soldering
 
 - Solder the three Dupont wires of approximately 5 cm in length.
 
+![Strip_IMG_3811](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/c5969658-61bd-4086-a13a-1279757fb8b5)<br>
 Strip soldering
-![Strip_IMG_3811](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/c5969658-61bd-4086-a13a-1279757fb8b5)
 
-The resistor is an additional security and can be omitted if necessary.
+The 470 ohm resistor in the middle data lineis an additional security and can eventually be omitted.
+
 - Cut the middle wire, connected to Di, and solder the 470 ohm resistor between it.
+
 Di is "Data in" and Do on the other side of the LED is "Data out".
+
 This is the signal wire that tells the LEDS what color they should adopt. In the LED you see the small chip that controls all this.
 
 
 The capacitor can be omitted if necessary. The strip is relatively short and does not draw much current when switched on.
+
 If the lighting is not constant and the light flashes, the capacitor can solve this. Probably a heavier diet too.
 - Solder the capacitor to the GND and +5V connections. Longest leg of the capacitor at the 5V.
+
 On the GND side, a gray line with - - on it should be visible on the capacitor.
+
 The capacitor captures the wave of electrons that flow into the LED strip when the power is turned on.
+
 The capacitor dampens this wave so that the LEDs are less stressed when turned on.
 
 
 - Apply a drop of glue to the connection to prevent loosening.
 
-The photo shows additional wires soldered. A GND (ground wire) can be used for the LDR connection.
-There is a shortage of GND connections on the Arduino. The diagram shows that two wires go to the GND.
+The photo shows additional wires soldered. A GND (ground wire) can be used for the LDR connection.<br>
+There is a shortage of GND connections on the Arduino. The diagram shows that two wires go to the GND.<br>
  ![ArduinoMG_3940](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/738055cf-79fa-4ae0-b3d2-107e615aa068)
 
 It is wise to label the wires. This prevents errors when connecting and is practical if something ever comes loose or needs to be replaced later.
@@ -227,9 +265,14 @@ It is wise to label the wires. This prevents errors when connecting and is pract
 ![DS3231_IMG_3807](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/5be51ae4-225e-462d-94f1-2a4601e163c6)
 
 It is true that the DS3231 clock module is connected to 3.3V, but it can also be connected to 5V.
-The rotary receives its power from a digital pin that is turned "on" in the software.
-pinMode(EncoderPow, OUTPUT );
-digitalWrite(EncoderPow,HIGH);There is then 5V on pin 2 and 20 mA current can be safely drawn from it
+
+The rotary receives its power from a digital pin that is turned "on" in the software.<br>
+<pre>
+pinMode(EncoderPow, OUTPUT );<br>
+digitalWrite(EncoderPow,HIGH); 
+</pre>
+There is then 5V on pin 2 and 20 mA current can be safely drawn from it<br>
+
 The clock could also be powered with a digital pin if the software is adjusted.
 ![DS3231_IMG_3805](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/8dc91efd-6ec3-4d24-ad68-b35b87830b4a)
 
