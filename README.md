@@ -4,7 +4,7 @@ Below the Dutch text is a detailled English description.
 Fibonacci vierkante buisklok, of stokklok.
 
 Deze vierkante kokerklok is een variatie op de [Fibonacciklokkast](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciClock/Fibonacciklok.html)  <br>
-De software is vereenvoudigd en geschikt voor de WS2812- en SK6812-kleuren-LED's.
+De software geschikt voor de WS2812- en SK6812-kleuren-LED's.
 
 Een uitgebreide Nederlandse handleiding is [hier te vinden](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html) <br>
 De handleiding staat hierboven als pdf.
