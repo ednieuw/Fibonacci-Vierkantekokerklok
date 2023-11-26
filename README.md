@@ -243,10 +243,10 @@ Between 5V and GND pins on the Arduino Nano it is more than 10 kOhm (10,000 Ohm)
 - Connect the Rotary or membrane button and RTC clock module according to the diagram above.
 ![AllconnectedIMG_3819](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/db806544-5ef8-41ab-afbd-8484693aa61a)
 
-Connections to Arduino
+### Connections to Arduino
 
 - Connect the USB plug to a 5V power supply.
-Wait a few seconds. No burning smell and the LEDs light up?
+Wait a few seconds. No  smell of burning plastic and the LEDs light up?
 
 ## The software
 ### IDE preparation
@@ -258,47 +258,57 @@ Arduino IDE
 The software uses libraries. This is software written by others that contains functions that would otherwise take you months to figure out and program. Now you can use that work that others have selected for you.
 ![libraries](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/10901af6-7d93-4fe4-a157-afba87b97806)
 
-Libraries
-The Arduino programming environment offers a wide range of libraries.
-In order to adapt this Fibonacci clock software, the following libraries must be installed in the Arduino IDE:
-this goes like this:
+###  Libraries
+The Arduino programming environment offers a wide range of libraries.<br>
+In order to adapt this Fibonacci clock software, the following libraries must be installed in the Arduino IDE:<br>
+This goes like this:
 - In the IDE menu open: Sketch->Include library -> manage libraries
-- Find the following libraries and install them
-Adafruit Neopixel
-Encoder by Paul Stofregen
-Keypad by Mark Stanley, Alexander Brevig
-RTClib at Adafruit
-Another option is to copy all libraries from this ZIP file to the folder where the sketches are located.
-In this sketch folder there is a folder "libraries". Copy the contents of the ZIP file into it.
-There are many types of Arduinos. we use the Arduino Nano
-In the menu: Tools -> board you can select the Arduino Nano
-Under Processor, choose ATMEGA328p (Old bootloader)
-board
-![boards](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/ba27c377-93e0-4fc6-b779-c9dc01410b57)
+ Find the following libraries and install them
+* Adafruit Neopixel
+* Encoder by Paul Stofregen
+* Keypad by Mark Stanley, Alexander Brevig
+* RTClib at Adafruit
 
-To place the code in the Arduino Nano, an Arduino must be connected to the PC via a USB cable.
-Port then turns black and a com port can be checked
-If the arrow to the right under edit in the menu is then pressed, the program will be loaded into the Arduino nano.
+Another option is to copy all libraries from this ZIP file to the folder where the sketches are located.<br>
+In this sketch folder there is a folder "libraries". <br>
+Copy the contents of the ZIP file into it.<br>
+
+There are many types of Arduinos. We use the Arduino Nano.
+
+- In the menu: Tools -> board you can select the Arduino Nano
+- Under Processor, choose ATMEGA328p (Old bootloader)
+
+![boards](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/ba27c377-93e0-4fc6-b779-c9dc01410b57)
+board
+
+To place the code in the Arduino Nano, an Arduino must be connected to the PC via a USB cable.<br>
+Port then turns black and a com port can be checked.<br>
+If the arrow to the right under edit in the menu is then pressed, the program will be loaded into the Arduino Nano.<br>
 
 ## The program and its algorithms
 
-The parts used can be selected with #define.
-Placing two slashes // before a #define disables the option.
-In the program, the pieces that code for a part can be recognized by the program lines between #ifdef and #endif.
-The piece of code will not be compiled into the software if it is not defined with a #define.
-
+The hardware parts used can be selected with #define in the top of the software coding.<br>
+Placing two slashes // before a #define disables the option.<br>
+In the program, the pieces that code for a part can be recognized by the program lines between #ifdef and #endif.<br>
+The piece of code will not be compiled into the software if it is not defined with a #define.<br>
+<pre>
 #ifdef ROTARYMOD
 #include <Encoder.h> // For rotary encoder
 #endif ROTARYMOD
+</pre>
 
 The software supports WS2812 or SK6812 LED strips. Choose one of these.
+
 You can also choose between a rotary knob (ROTARYMOD) or a keypad (KEYPAD).
 
 The clock can work without DS3231 time module. It then works with the processor's clock.
+
 This processor clock has a deviation of seconds per day. This is only useful for testing the software.
+
 A DS3231 module has a deviation of only one minute per year.
+
 If #define MOD_DS3231 is disabled, the processor clock is used.
- 
+<pre> 
 //--------------------------------------------
 // ARDUINO Definition of installed modules
 //--------------------------------------------
@@ -322,10 +332,14 @@ If #define MOD_DS3231 is disabled, the processor clock is used.
                      #ifdef KEYPAD
 #include <Keypad.h>               // For 3x4 keypad
                      #endif KEYPAD
+</Keypad.h>pre>
+ 
+"Pin Assigments" defines a readable name for a pin.<br>
+Digital pins can only be turned on or off or read.<br>
+At analog pins, voltages between 0 and 5 V can be measured or controlled with values ​​between 0 and 1024.<br>
 
-"Pin Assigments" defines a readable name for a pin.
-Digital pins can only be turned on or off or read.
-At analog pins, voltages between 0 and 5 V can be measured or controlled with values ​​between 0 and 1024.//--------------------------------------------
+<pre>
+//--------------------------------------------
 // PIN Assigments
 //-------------------------------------------- 
 
@@ -348,13 +362,16 @@ enum AnaloguePinAssignments {
  EmptyA3       = 3,               // EmptyA3
  SDA_pin       = 4,               // SDA pin
  SCL_pin       = 5};              // SCL pin
- 
-After these "Pin Assigments", several definitions of variables follow in the software.
-After the initializations, the Arduino will execute the setup() function.
+</pre> 
+
+After these "Pin Assigments", several definitions of variables follow in the software.<br>
+After the initializations, the Arduino will execute the setup() function.<br>
 Here, all kinds of functions of the libraries are enabled and the analog and digital pins are defined for input or output.
+
 After setup(), the loop() function, as the name suggests, runs endlessly from start to finish in a loop.
 This is the heart of the coding from which everything is controlled and calculated.
-//--------------------------------------------
+<pre>
+ //--------------------------------------------
 // ARDUINO Loop
 //--------------------------------------------
 void loop(void)
@@ -390,22 +407,28 @@ void setup()         // initialise the hardware // initialize the appropriate pi
  strip.begin();                                                     // Start communication to LED strip
  strip.setBrightness(BRIGHTNESS);                                   // Set brightness of LEDs
  ShowLeds(); 
-et cetera ......
+</pre>
+ 
+ et cetera ......
  
  
 The software quickly checks the loop to see whether anything is being entered serially, whether the demo mode is turned on and whether the dial is being turned.
+
 Furthermore, there are actions once per second and once per minute that require the rest of the software's attention.
+
 The light intensity of the LDR is read every second. This intensity is weighted with the previous reading so that the brightness of the LEDs is adjusted in a muted manner.
+
 The reading of the LDR, which is between 0 and 1024, is taken by the square root so that the light intensity is adjusted parabolically.
-The clock changes the time display every minute. Every minute the numbers 1,1,2,3,5 are randomly selected from an array and added up. If the value matches the desired value, these numbers are sent to the clock. A processor is so extremely fast that this method works more elegantly than putting all the options in a list. Especially when memory space is limited.
-The color palettes are stored in an array colors[][].
+
+The clock changes the time display every minute. Every minute the numbers 1,1,2,3,5 are randomly selected from an array and added up. <br>
+If the value matches the desired value, these numbers are sent to the clock. <br>
+A processor is so extremely fast that this method works more elegantly than putting all the options in a list. Especially when memory space is limited.
+
+The color palettes are stored in an array colors[][].<br>
 For example pallette number 1:
-
-{ white, red , yellow, blue },
-
-//
-#1 Mondrian
-
+<pre>
+{ white, red , yellow, blue },          //  #1 Mondrian
+</pre>
 
 If a compartment must remain empty and has a value of zero, the color becomes white.
 
@@ -415,7 +438,7 @@ the color becomes blue.
 
 The variable bits[] keeps track of this. It can have the value 0, 1, 2 or three.
 
-Service
+### Operation of the stick
 
 The clock is operated with the rotary.
 
@@ -439,7 +462,7 @@ The settings are saved when the power is removed from the clock.
 
 To reset the clock, press 20 times or more or press and hold
 to hold.
- 
+<pre> 
 switch (NoofRotaryPressed) // No of times the rotary is pressed
 {
 case 1: ChangeTime = true; ColorLeds("",0,NUM_LEDS-1,0XFF0000); ShowLeds(); delay(1000); break; // Change the hours RED 
@@ -458,16 +481,21 @@ case 13: DisplayPalette = 0; break;
 case 14 ... 19: break; 
 default: NoofRotaryPressed = 0; Reset(); break; 
 }
- 
+</pre> 
+
 ## Keypad
 The 3x4 key keypad in the current software is too large to stick on the clock, but can be used for a cabinet.
+
 ## Serial control
 ![Serialmonitor](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/386f4fb7-fbc1-47ad-a8b7-d64cfb5eafd2)
 
-Serial monitor
+### Serial monitor
 After the clock is connected to the PC with a serial cable, the clock can be controlled with the Arduino IDE software.
+
 Entering 'i' brings up a menu in the "serial monitor" of the Arduino IDE.
+
 The time and the measured light intensity are printed every thirty seconds.
+
 With a connected DS3231 time module, the measured temperature +/-5C is also shown.
 
 Sensor:683 Min:157 Max:736 Out: 41=16% Temp:22C
@@ -476,6 +504,7 @@ Min: is the lowest measured bits and Max: the highest.
 Out: is the calculated light intensity (0-255). In this case 16%.
 
 The menu after pressing I is as follows:
+<pre>
 Enter Time as: hhmm (1321) or hhmmss (132145)
 D for Demo mode
 I for information
@@ -485,10 +514,15 @@ Pn (P1) to select a palette (0-9)
 Max brightness: 20%
 Min brightness: 10 bits
 Number of LEDs: 12
+</pre>
 The lowest light intensity sent to the clock can be set with L.
+
 The clock will then not turn on softer than that value when it is completely dark.
 L5 is a nice value.
+
 The maximum strength can be set with M. Sometimes the clock is too bright or too dim for the place where it is located.
 M80 is the default value.
+
 The color palette can be selected with P. P1 is standard.
+
 With D the clock goes into demo mode until D is entered again or the clock is turned off.
