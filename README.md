@@ -332,9 +332,11 @@ If #define MOD_DS3231 is disabled, the processor clock is used.
                      #ifdef KEYPAD
 #include <Keypad.h>               // For 3x4 keypad
                      #endif KEYPAD
-</Keypad.h>pre>
+
+ </pre>
+
  
-"Pin Assigments" defines a readable name for a pin.<br>
+ "Pin Assigments" defines a readable name for a pin.<br>
 Digital pins can only be turned on or off or read.<br>
 At analog pins, voltages between 0 and 5 V can be measured or controlled with values ​​between 0 and 1024.<br>
 
