@@ -1,12 +1,14 @@
  # Fibonacci vierkante kokerklok (Fibonacci square tube clock)
-Below an English desctiption
+Below the Dutch text is a detailled English description.
 
 Fibonacci vierkante buisklok, of stokklok.
 
 Deze vierkante kokerklok is een variatie op de [Fibonacciklokkast](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciClock/Fibonacciklok.html)  <br>
 De software is vereenvoudigd en geschikt voor de WS2812- en SK6812-kleuren-LED's.
 
-Een uitgebreide handleiding is [hier te vinden](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html) <br>
+Een uitgebreide Nederlandse handleiding is [hier te vinden](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html) <br>
+De handleiding staat hierboven als pdf.
+
 <img alt="Fibonaccistick and Niki de Saint Phalle inflatable doll" height="675" src="Stick_Niki_IMG_4173.JPG" width="900" />
 
 Gebruik Arduino
@@ -67,7 +69,7 @@ Hoe laat is het in de foto? <br>
 Een gedetaileerde beschrijving hier: https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html
 
  
-# Detailed description 
+# Detailled English description 
 This square case clock is a variation on the Fibonacci case clock.  <br>
 The software is simplified and suitable for two types of color LEDs. <br>
 The Fibonacci clock was a kick-starter project by Philippe Chrétien. <br>
