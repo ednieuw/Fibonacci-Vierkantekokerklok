@@ -1,7 +1,6 @@
  # Fibonacci vierkante kokerklok (Fibonacci square tube clock)
-Below the Dutch text is a detailled English description.
-
-Fibonacci vierkante buisklok, of stokklok.
+Below the Dutch text is a detailed English description or as pdf above.<br><br>
+The case can also be 3d-printed. See here: https://www.thingiverse.com/thing:6483258<br><br>
 
 Deze vierkante kokerklok is een variatie op de [Fibonacciklokkast](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciClock/Fibonacciklok.html)  <br>
 De software geschikt voor de WS2812- en SK6812-kleuren-LED's.
