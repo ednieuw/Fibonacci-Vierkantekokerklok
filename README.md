@@ -2,10 +2,10 @@
 Below the Dutch text is a detailed English description or as pdf above.<br><br>
 The case can also be 3d-printed. See here: https://www.thingiverse.com/thing:6483258<br><br>
 
-Deze vierkante kokerklok is een variatie op de [Fibonacciklokkast](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciClock/Fibonacciklok.html)  <br>
+Deze vierkante kokerklok is een variatie op de [Fibonacciklokkast](https://ednieuw.nl/Woordklok/FibonacciClock/Fibonacciklok.html)  <br>
 De software geschikt voor de WS2812- en SK6812-kleuren-LED's.
 
-Een uitgebreide Nederlandse handleiding is [hier te vinden](https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html) <br>
+Een uitgebreide Nederlandse handleiding is [hier te vinden](https://ednieuw.nl/Woordklok/FibonacciStick/Fibonaccistick.html) <br>
 De handleiding staat hierboven als pdf.
 
 <img alt="Fibonaccistick and Niki de Saint Phalle inflatable doll" height="675" src="Stick_Niki_IMG_4173.JPG" width="900" />
@@ -65,7 +65,7 @@ Hoe laat is het in de foto? <br>
 
 ![Stickclock](https://github.com/ednieuw/Fibonacci-Vierkantekokerklok/assets/12166816/624ee14f-00de-4b0c-b973-1493eee80e15)
 
-Een gedetaileerde beschrijving hier: https://ednieuw.home.xs4all.nl/Woordklok/FibonacciStick/Fibonaccistick.html
+Een gedetaileerde beschrijving hier: https://ednieuw.nl/Woordklok/FibonacciStick/Fibonaccistick.html
 
  
 # Detailled English description 
